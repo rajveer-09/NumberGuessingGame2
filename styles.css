@@ -18,6 +18,10 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 body::before {
@@ -50,7 +54,6 @@ body::before {
   max-width: 600px;
   min-width: 300px;
   min-height: 250px;
-  margin: 5rem auto;
   position: relative; /* Added for positioning toggle */
   transition: background 0.3s, border-color 0.3s;
 }
@@ -211,18 +214,6 @@ body.dark-theme .hint button:hover {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  .container {
-    width: 90%;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    width: 95%;
-  }
-}
-
 @media (max-width: 768px) {
   .container {
     width: 100%;
